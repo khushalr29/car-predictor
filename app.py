@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle 
 import pandas as pd
+import sklearn
+
 model=pickle.load(open("LinearRegressionModel.pkl",'rb'))
 
 def predict(name,company,year,kms,fuel):
